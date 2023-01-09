@@ -1,0 +1,111 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel} 
+
+\usepackage{graphicx,amssymb,amsmath,amsfonts,latexsym,mathtext, mathrsfs, amsthm, thmtools}
+\usepackage[a4paper,left=2cm, right=2cm, top=2cm, bottom=2cm, bindingoffset=0cm]{geometry}
+
+\usepackage{indentfirst}
+
+\usepackage{setspace}
+% полуторный интервал
+\onehalfspacing
+
+% \usepackage{pscyr} % Нормальные шрифты
+\usepackage{enumerate}
+
+\usepackage[usenames]{color}
+\usepackage{colortbl}
+
+\usepackage{floatflt}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+%\usepackage{indentfirst}   
+
+\usepackage{cases}
+
+\usepackage{import}
+%-------------------------------------------------------
+\usepackage{bbold} % Жирная единица
+\usepackage{amscd} % Диаграммы
+
+% для квадратных скобок под формулой--------------------
+\usepackage{mathtools}% http://ctan.org/pkg/mathtools
+
+% Для текста в рамочке в качестве отступления/напоминания
+\usepackage{xcolor}
+\usepackage{mdframed}
+
+% для зачеркивания в формулах
+\usepackage{cancel}
+
+\newcommand{\ph}{\varphi}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\s}{\sigma}
+\newcommand{\ws}{\widetilde{\sigma}}
+\newcommand{\wmu}{\widetilde{\mu}}
+\newcommand{\w}{\widetilde}
+\newcommand{\vkappa}{\varkappa}
+
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\le}{\leqslant}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Co}{\mathbb{C}}
+\newcommand{\Na}{\mathbb{N}}
+\newcommand{\la}{\lambda}
+
+\newcommand{\llangle}{\left\langle}
+\newcommand{\rrangle}{\right\rangle}
+\newcommand{\braces}[1]{\left(#1\right)}
+\newcommand{\lrangle}[1]{\left\langle #1 \right\rangle}
+
+\newcommand{\threestars}{\begin{center}$ {\ast}\,{\ast}\,{\ast} $\end{center}}
+
+\DeclareMathOperator{\AC}{AC}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\Rea}{Re}
+
+\theoremstyle{definition}
+\newtheorem{innercustomthm}{Теорема}
+\newenvironment{customthm}[1]
+{\renewcommand\theinnercustomthm{#1}\innercustomthm}
+{\endinnercustomthm}
+
+\newtheorem{innercustomlm}{Лемма}
+\newenvironment{customlm}[1]
+{\renewcommand\theinnercustomlm{#1}\innercustomlm}
+{\endinnercustomlm}
+
+\newtheorem{innercustomcor}{Следствие}
+\newenvironment{customcor}[1]
+{\renewcommand\theinnercustomcor{#1}\innercustomcor}
+{\endinnercustomcor}
+
+\newcommand{\df}{\par\noindent%
+    \textbf{Опр. } }
+\newcommand{\notion}{\par\noindent%
+    \textbf{Обозначение.} }
+\newcommand{\note}{\par\noindent%
+    \textbf{Замечание.} }
+\newcommand{\state}{\par\noindent%
+    \textbf{Утвержение.} }
+\newcommand{\cor}{\par\noindent%
+    \textbf{Следствие.} }
+
+\newcommand{\ex}{\par\noindent
+    \textbf{Пример.} }
+\newcommand{\z}{\par\noindent%
+    \textbf{Задача.} }
+
+\newdimen\theoremskip
+\theoremskip=2pt
+\renewenvironment{proof}{\par\noindent$\square\quad$}{$\hfill\blacksquare$ \par\vskip\theoremskip} %hfill for align at the end of line
+
+\newenvironment{smallproof}{\color{blue!50!black}\par\noindent$\triangleright\quad$}{$\hfill\triangleleft$ \par\vskip\theoremskip}
+
+\usepackage{stackengine}
+\stackMath
+\newcommand\frightarrow{\scalebox{1}[.4]{$\rightarrow$}}
+\newcommand\darrow[1][]{\mathrel{\stackon[1pt]{\stackanchor[1pt]{\frightarrow}{\frightarrow}}{\scriptstyle#1}}}
